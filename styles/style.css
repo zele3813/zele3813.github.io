@@ -3,15 +3,16 @@
     padding: 0;
 }
 
+/*General
+===================================*/
+
 body{
     background-color: black;
-    color: white;
+    color:white;
 }
 
-#home{
-    position: relative;
-    width: 100%;
-    height: 100vh;
+h1{
+    display: block;
 }
 
 .fixed-top{
@@ -19,15 +20,43 @@ body{
     top: 0;
 }
 
+section{
+    z-index:0;
+}
+
+.subheader{
+    height:100vh;
+}
+
+/*Header
+===================================*/
+
+/* header{
+    position: relative;
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    z-index:1;
+} */
+
+
+/*Navigation
+===================================*/
 nav{
-    display: flex;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
     background-color: white;
     border: solid black;
+    color:white;
+    top:0;
+    /* z-index: 1; */
+}
+
+nav ul{
+    float: right;
 }
 
 nav ul li{
@@ -46,11 +75,58 @@ nav ul li a:hover{
     color: red;
 }
 
-.intro{
-    margin-left: 8%;
-    margin-top: 15%;
+nav ul li.current a{
+    color: red;
 }
 
+/*Home
+===================================*/
+#home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    /* overflow: hidden; */
+    /* z-index: 0; */
+}
+
+.home-intro h1{
+    font-size: 5vw;
+    color: white;
+    margin-top: 25%;
+    font: 80px/1.1em 'opensans-bold', sans-serif;
+}
+
+.home-intro span{
+    color: skyblue;
+}
+
+#home .social li a{
+    color: white;
+}
+
+
+/*About
+=====================*/
+#about{
+    padding-top: 12rem;
+    padding-bottom: 15rem;
+    /* background-color: black; */
+
+}
+
+
+/*Project
+=====================*/
+#project{
+    background-color: white;
+    color:black;
+}
+
+
+/*Footer
+=====================*/
 footer{
     text-align: center;
 }

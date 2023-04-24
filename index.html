@@ -1,33 +1,56 @@
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zele's Portfolio</title>
+
+    <!-- CSS -->
     <link href="styles/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+    <!-- Scripts -->
+    
+    <!-- Icons -->
+
 </head>
 <body>
     <!--Navbar here for 'Home', 'About', 'Projects', etc.-->
-    <header id="home">
-        <div>
-            <nav class="fixed-top">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#project">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-            <div class="intro">
-                <h1 id="myname">Placeholder</h1>
-            </div>
+    <!-- <header> -->
+        
+    <!-- </header> -->
+
+    <!-- Home Section -->
+    <section id="home">
+        <nav id="nav-wrap" class="fixed-top">
+            <ul>
+                <li class="home current"><a href="#">HOME</a></li>
+                <li class="about"><a href="#about">ABOUT</a></li>
+                <li class="project"><a href="#project">PROJECTS</a></li>
+                <li class="contact"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="home-intro">
+            <h1 id="myname"><span>Zele</span> Dong</h1>
+            <ul class="social">
+                <!-- <li><a href=""><i class="fa fa-github"></i></a></li> -->
+            </ul>
         </div>
-    </header>
+    </section>
+
+    <!-- </header> -->
 
     <!--About Section-->
     <section id="about">
         <div>
-            <h3 class="subheaders">About Placeholder</h3>
+            <h3 class="subheader">About Placeholder</h3>
+        </div>
+        <div class="section-intro">
+            <!-- <div class="col-12">
+
+            </div> -->
         </div>
         <p>
             
@@ -38,7 +61,7 @@
     <section id="project">
         <div>
             <div>
-                <h3 class="subheaders">Projects Placeholder</h3>
+                <h3 class="subheader">Projects Placeholder</h3>
             </div>
             <div>
                 <ul>
@@ -52,13 +75,16 @@
     <!--Contact Section-->
     <section id="contact">
         <div>
-            <h3 class="subheaders">Contact Placeholder</h3>
+            <h3 class="subheader">Contact Placeholder</h3>
         </div>
     </section>
 
     <!--Footer-->
     <footer>
-        Footer Placeholder
+        <span class="note">&copy; Copyright 2023. | All rights reserved.</span>
     </footer>
+
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
