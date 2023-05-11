@@ -1,10 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
+    outline: 0;
+    font-size:100%;
+    
 }
 
 /*General
 ===================================*/
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: black;
@@ -22,50 +29,68 @@ h1{
 
 section{
     z-index:0;
+    padding-bottom: 15rem;
 }
 
-.subheader{
-    height:100%;
-}
-
-/*Header
-===================================*/
-
-/* header{
-    position: relative;
-    background-color: black;
+.section-header{
+    /* height:100%; */
     text-align: center;
-    overflow: hidden;
-    z-index:1;
-} */
+    /* padding-top: 12rem; */
+    font-weight:bold;
+
+}
+
+.section-header h3{
+    font-size: 5vw;
+    line-height: 1.875;
+    margin-bottom: 0.3rem;
+    letter-spacing: .4rem;
+}
+
+.row{
+    /* width: auto; */
+}
 
 /*Home
 ===================================*/
 #home{
     position: relative;
-    /* width: 100%; */
     height: 100%;
     background-color: black;
     text-align: center;
-    /* overflow: hidden; */
-    /* z-index: 0; */
-    /* top: 0; */
 }
 
 .home-intro h1{
-    font-size: 5vw;
+    font-size: 90px;
     color: white;
-    /* margin-top: 25%; */
-    padding-top: 25%;
+    padding-top: 20%;
     vertical-align: middle;
-    font: 80px/1.1em 'opensans-bold', sans-serif;
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, .8);
 }
 
 .home-intro span{
     color: skyblue;
 }
 
-#home .social li a{
+@media screen and (max-width: 800px){
+    #home .home-intro h1{
+       font-size:70px;
+    }    
+}
+
+@media screen and (min-width: 801px){
+    #home .home-intro .social li{
+        font-size: 50px;
+    }    
+}
+
+@media screen and (max-width: 800px){
+    #home .home-intro .social li{
+        font-size: 30px;
+    }    
+}
+
+#home .home-intro .social li a{
     color: white;
 }
 
@@ -79,10 +104,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    border: solid black;
     color:white;
     top:0;
-    /* z-index: 1; */
     
 }
 
@@ -100,7 +123,6 @@ nav ul li a{
     text-decoration: none;
     color: black;
     font-weight: bold;
-
 }
 
 nav ul li a:hover{
@@ -111,13 +133,33 @@ nav ul li.current a{
     color: red;
 }
 
+.scrolldown a{
+    scroll-behavior: smooth;
+    color:white;
+}
 
+#nav-wrap {
+    transition: top 0.8s;
+}
+
+/*Social
+=====================*/
+#home .social{
+    margin: 48px 0;
+    padding:0;
+    list-style: none;
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, .8);
+}
+
+#home .social li{
+    display: inline-block;
+    padding: 0 24px;
+}
 
 /*About
 =====================*/
 #about{
-    padding-top: 12rem;
-    padding-bottom: 15rem;
+    
     /* background-color: black; */
 
 }
@@ -126,13 +168,43 @@ nav ul li.current a{
 /*Project
 =====================*/
 #project{
-    background-color: white;
-    color:black;
+    background-color: black;
+    color:white;
 }
+
+/*Contact
+=====================*/
+#contact{
+    background-color: black;
+    text-align: center;
+    color:white;
+    padding-top: 12rem;
+    padding-bottom: 7.2rem;
+}
+
+#contact .contact-info{
+    margin-top: 3.6rem;
+}    
+
+@media screen and (max-width: 800px){
+    #contact .contact-info{
+        display: block;
+    }
+    #contact .contact-info div{
+        margin:auto;
+    } 
+}
+
+#contact .contact-info .icon{
+    font-size: 4.2rem;
+}    
 
 
 /*Footer
 =====================*/
 footer{
     text-align: center;
+    background-color: gray;
+    color:white;
+    padding: 30px 0;
 }
