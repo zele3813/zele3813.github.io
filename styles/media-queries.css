@@ -1,0 +1,119 @@
+
+/*Home
+=====================*/
+
+@media screen and (max-width: 800px){
+
+    #home .home-intro h1{
+       font-size:70px;
+    }    
+
+}
+
+@media screen and (min-width: 801px){
+
+    #home .home-intro .social li{
+        font-size: 50px;
+    }    
+
+}
+
+@media screen and (max-width: 800px){
+
+    #home .home-intro .social li{
+        font-size: 30px;
+    }    
+
+}
+
+/*About
+=====================*/
+
+@media screen and (max-width: 800px){
+
+    .timeline-title{
+        float:none;
+        width:100%;
+        padding-left: 2rem;
+    }
+
+    .timeline-desc{
+        padding-left: 2rem;
+        margin-left: 0;
+    }
+
+}
+
+
+/*Project
+=====================*/
+
+/*Card/Modal Buttons*/
+
+/* Cards take up the entire viewport minus margin/padding when the width of the device is less than 800 px */
+@media screen and (max-width: 800px){
+
+    #project .project-content .row{
+        display: block;
+    }
+
+    #project .project-content .col-4{
+        margin:auto;
+        width: 100%;
+        padding-bottom:1.2rem;
+    }
+
+    #project .card{
+        min-height: 340px;
+    }
+
+    #project .project-content button,
+    #project .project-content a{
+        width: 100%;
+        display: inline-block;
+    }
+
+    #project .card{
+        height: fit-content;
+    }
+}
+
+/* Cards take up half of the viewport within the width range */
+@media screen and (min-width: 801px) and (max-width: 1100px){
+
+    #project .project-content .col-4{
+        margin:auto;
+        width: 50%;
+        padding-bottom:1.2rem;
+    }
+
+    #project .project-content button,
+    #project .project-content a{
+       width:100%;
+       display: inline-block;
+    }
+
+}
+
+@media screen and (min-width: 1101px){
+    #project .bplusTree{
+        position: relative;
+        top: -70px;
+    }
+}
+
+/*Contact
+=====================*/
+
+/* Ways to contact / Contact method Divs on their own lines*/
+@media screen and (max-width: 800px){
+
+    #contact .contact-info{
+        display: block;
+    }
+
+    #contact .contact-info div{
+        margin:auto;
+    } 
+    
+}

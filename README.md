@@ -1,4 +1,6 @@
-Personal Website
+# Personal Website
 
-Icons:
--FontAwesome
+## Credits:
+### Icons:
+* FontAwesome
+* Devicon
